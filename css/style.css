@@ -130,10 +130,10 @@ header a:hover{
 }
 
 #boxes .box img{
-    width: 90px;
+    width: 80px;
 }
-#boxes .box img[src="./img/logo_2.jpg"]{
-    width: 65px;
+#boxes .box img[src="./img/logo_3.png"]{
+    width: 110px;
 }
 
 /* Sidebar*/
@@ -152,6 +152,7 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
 article#main-col{
     float: left;
     width: 65%;
+    margin-top: 40px;
 }
 
 /* Services */
