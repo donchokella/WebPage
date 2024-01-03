@@ -1,162 +1,197 @@
-body{
+body {
     font: 15px/ Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #fddfd8;
 }
+
 /* Global*/
-.container{
+.container {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
-ul{
+.container a:hover {
+    color: #4f271c;
+
+}
+
+ul {
     margin: 0;
     padding: 0;
 }
 
-.button_1{
-    background: #e8491d;
+.button_1 {
+    background: #4f271c;
     height: 38px;
     border: 0;
     color: #ffffff;
     padding: 0 20px 0 20px;
- }
+}
 
- .dark{
+.dark {
     padding: 15px;
-    background: #35424a;
+    background: #473f38;
     color: #ffffff;
     margin-top: 10px;
     margin-bottom: 10px;
- }
+}
+
+.dark a {
+    color: white;
+}
+
+.dark a:hover {
+    color: #4f271c;
+}
 
 /* Header*/
-header{
-    background: #888;
+header {
+    background: #a79482;
     color: #ffffff;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #e8491d 3px solid;
+    border-bottom: #4f271c 3px solid;
 }
-header a{
+
+header a {
     color: white;
     text-decoration: none;
     text-transform: capitalize;
     font-size: 16px;
 }
 
-header li{
+header li {
     float: left;
     display: inline;
     padding: 0 20px 0 20px;
 }
 
-header #branding{
+header #branding {
     float: left;
 }
 
-header #branding h1{
+header #branding h1 {
     margin: 0;
 }
 
-header nav{
+header nav {
     float: right;
     margin-top: 10px;
 }
 
-header .highlight, header .current a{
-    color: #e8491d;
+header .highlight,
+header .current a {
+    color: #4f271c;
     font-weight: bold;
 }
-header a:hover{
+
+header a:hover {
     color: aquamarine;
 
 }
 
 /* Showcase */
 
-#showcase{
-    min-height: 400px ;
+#showcase {
+    min-height: 400px;
     background: url('../img/background.jpg') no-repeat 0 -150px;
     background-size: 100%;
     text-align: center;
     color: white;
 }
-#showcase h1{
+
+#showcase h1 {
     margin-top: 10px;
-    font-size:  55px;
+    font-size: 55px;
     margin-bottom: 10px;
 }
 
-#showcase p{
-    font-size: 20px;
+#showcase p {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    /* Yazı rengi */
+
+    background-clip: text;
+    /* Metin içine arka planı sığdırma */
+    -webkit-background-clip: text;
+    /* Webkit (Chrome, Safari) için gerekli önek */
+    display: inline;
+    /* Metni düzgün bir şekilde göstermek için gerekli */
+    font-weight: lighter;
+    /* Yazı kalınlığı (isteğe bağlı) */
+
+    -webkit-text-stroke-width: 0.5px;
+
 }
 
 /* Newsletter */
 
- #newsletter{
-    padding: 15px;
-    color:#ffffff ;
-    background: #888;
- }
+#newsletter {
+    padding: 0px;
+    color: #ffffff;
+    background: #a79482;
+}
 
- #newsletter h1{
+#newsletter h1 {
     float: left;
- }
+}
 
- #newsletter form{
-    float: right ;
+#newsletter form {
+    float: right;
     margin-top: 15px;
     padding-top: 10px;
- }
+}
 
- #newsletter input[type="email"]{
-    padding:4px;
+#newsletter input[type="email"] {
+    padding: 4px;
     height: 25px;
     width: 250px;
- }
+}
 
 /* Boxes */
-#boxes{
+#boxes {
     margin-top: 20px;
 }
-#boxes .box{
+
+#boxes .box {
     float: left;
     width: 30%;
     padding: 10px;
     text-align: center;
 }
 
-#boxes .box img{
+#boxes .box img {
     width: 80px;
 }
-#boxes .box img[src="./img/logo_3.png"]{
+
+#boxes .box img[src="./img/logo_3.png"] {
     width: 110px;
 }
 
 /* Sidebar*/
-aside#sidebar{
+aside#sidebar {
     float: right;
     width: 30%;
     margin-top: 10px;
 }
 
-aside#sidebar .quote input, aside#sidebar .quote textarea{
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
     width: 90%;
     padding: 5px;
 }
 
 /* Main-Col */
-article#main-col{
+article#main-col {
     float: left;
     width: 65%;
     margin-top: 40px;
 }
 
 /* Services */
-ul#services li{
+ul#services li {
     list-style: none;
     padding: 20px;
     border: #cccccc solid 1px;
@@ -165,16 +200,17 @@ ul#services li{
 }
 
 /* Footer */
-footer{
+footer {
     padding: 20px;
     margin-top: 20px;
     color: #ffffff;
-    background-color: #e8491d;
+    background-color: #a79482;
     text-align: center;
 }
 
 /* Media Queries*/
-@media(max-width: 768px){
+@media(max-width: 768px) {
+
     header #branding,
     header nav,
     header nav li,
@@ -182,27 +218,87 @@ footer{
     #newsletter form,
     #boxes .box,
     article#main-col,
-    aside#sidebar{
+    aside#sidebar {
         float: none;
         text-align: center;
         width: 100%;
     }
 
-    header{
+    header {
         padding-bottom: 20px;
     }
 
-    #showcase h1{
+    #showcase h1 {
         margin-top: 40px;
     }
 
-    #newsletter button, .quote button{
+    #newsletter button,
+    .quote button {
         display: block;
         width: 100%;
     }
 
-    #newsletter form input[type="email"], .quote input, .quote textarea{
+    #newsletter form input[type="email"],
+    .quote input,
+    .quote textarea {
         width: 100%;
         margin-top: 5px;
     }
+}
+
+span1 {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#quote-text {
+    font-size: 24px;
+    /* Dilediğiniz font boyutunu burada belirleyebilirsiniz */
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#branding:hover img {
+    animation: rotate 0.5s ease-in-out infinite;
+}
+
+/* İlgili bölümün büyüyüp küçülen animasyonunu sağlamak için bir animasyon ekleyin */
+#boxes .box {
+    transition: transform 0.3s ease-in-out;
+}
+
+#boxes .box:hover {
+    transform: scale(1.1);
+}
+
+#boxes .box img {
+    width: 80px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#boxes .box img:hover {
+    transform: scale(1.1);
+    /* İstediğiniz büyüklük oranını kullanabilirsiniz */
+    animation: rotate 0.5s ease-in-out infinite;
+    /* Animasyonu sınırsız tekrar etmek için */
 }
